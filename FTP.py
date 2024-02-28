@@ -14,10 +14,6 @@ remote_dir = '/site/wwwroot'
 ftp = FTP_TLS(host)
 ftp.login(username, password)
 
-# Passive mode and EPSV settings
-ftp.set_pasv(True)
-ftp.set_epsv(False)
-
 # Change to the remote directory
 ftp.cwd(remote_dir)
 
